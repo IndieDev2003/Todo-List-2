@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+html,body{
+    height:100%;
+    width:100%;
+
+}
+.main{
+    min-height:100%;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0vh 0vw 3vh 0vw;
+    background: url(https://i.pinimg.com/originals/db/12/04/db1204cedcec05ad772a0a7069fcaa5b.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.app{
+    min-height:60vh;
+    width:80vw;
+    background-color: rgba(255, 255, 255, 0.411);
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    overflow: hidden;
+    margin:20vh 0px 20vh 0px;
+}
+.app-up{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.app-up h1{
+    margin:10px;
+    font-size:5vw;
+    color:rgb(255, 255, 255);
+}
+.app-input{
+    width:80%;
+    height:40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: white;
+
+    overflow: hidden;
+    justify-content: space-between;
+    border-radius:12px;
+    margin-top:10px;
+}
+.app-input input{
+    flex:1;
+    height:100%;
+    max-width: 50%;
+    border:none;
+    outline:none;
+    padding:0px 10px;
+    background: transparent;
+}
+.app-input button{
+    padding: 10px 20px;
+    border-radius:10px;
+    border:none;
+    background-color: rgb(252, 147, 73);
+}
+.app-tasks{
+    /* height:50%; */
+    width:100%;
+    padding:10px;
+
+    /* background-color: #194aee; */
+}
+ul{
+    padding:10px 10px;
+}
+
+ul li{
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    font-weight: 500;
+    padding:5px 40px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    list-style: none;
+
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height:15px;
+    width:15px;
+    border-radius:50%;
+    background-image: url(https://cdn-icons-png.flaticon.com/512/15469/15469621.png);
+    background-size: cover;
+    background-position: center;
+    top:10px;
+    left:10px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(https://cdn-icons-png.flaticon.com/512/190/190411.png);
+}
+ul li span{
+    width:30px;
+    height:30px;
+    font-size:20px;
+    position: absolute;
+    top:0px;
+    right:0px;
+    text-align: center;
+    padding:2px;
+    border-radius: 55px;
+}
+ul li span:hover{
+    background-color: #030303;
+    color:white;
+}
+.footer h4{
+    color:white;
+    -webkit-text-stroke: 1px rgb(8, 11, 228);
+    font-size: 5vh;
+}
+.footer h4 span{
+    color:red;
+    -webkit-text-stroke: none;
+}
